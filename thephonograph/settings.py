@@ -94,8 +94,8 @@ WSGI_APPLICATION = 'thephonograph.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('NAME'),
-        'USER': os.getenv('USER'),
+        'NAME': '',
+        'USER': '',
         'PASSWORD': ''
     }
 }
@@ -149,3 +149,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
+
+import django_heroku
+django_heroku.settings(locals())
