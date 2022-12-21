@@ -59,13 +59,13 @@
 
             
                 <img class="imagey" src="{% static 'main_app/media/5050580779112.jpg' %}">
-            {% for crate in crateInfo %}
-             {% if user.id == crate.user.id %}
+            <!-- {% for crate in crateInfo %} -->
+             <!-- {% if user.id == crate.user.id %} -->
                 <a class="text" href="{% url 'get_crate' %}">View Your Crate</a>
-               {% else %}
-                <a class="text" href="{% url 'crates_create' %}">Create A Crate</a>
-             {% endif %}
-             {% endfor %} 
+               <!-- {% else %} -->
+                <!-- <a class="text" href="{% url 'crates_create' %}">Create A Crate</a> -->
+             <!-- {% endif %} -->
+             <!-- {% endfor %}  -->
             </div>
        
         <a href="{% url 'records_index' %}">
