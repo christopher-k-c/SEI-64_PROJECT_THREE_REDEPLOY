@@ -42,7 +42,7 @@ SECRET_KEY = 'django-insecure-u2q@wa8o2#a(w@g&*f9k&lk)hakmr@y_zxo4-!qz&m(0=2(mg-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['thephonoapp.herokuapp.com']
 
 
 # Application definition
